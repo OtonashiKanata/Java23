@@ -1,3 +1,3 @@
 Java23
 
-My first
+My first GIT repository 
