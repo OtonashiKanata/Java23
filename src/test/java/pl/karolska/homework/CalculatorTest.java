@@ -2,7 +2,6 @@ package pl.karolska.homework;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import pl.karolska.homework.Calculator;
 
 class CalculatorTest {
 
