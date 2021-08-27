@@ -7,7 +7,7 @@ import pl.karolska.homework.Calculator;
 class CalculatorTest {
 
     @Test
-    void shoulSdummationWork() {
+    void should5Minus5Be10() {
 
         int value1 = 5;
         int value2 = 5;
@@ -18,7 +18,7 @@ class CalculatorTest {
     }
 
         @Test
-        void shouldSubstractionWork() {
+        void should10PlusTo5Be5() {
 
             int value1 = 10;
             int value2 = 5;
@@ -29,7 +29,7 @@ class CalculatorTest {
     }
 
         @Test
-        void shouldMultiplicationWork() {
+        void should5Times5Be25() {
 
         int value1 = 5;
         int value2 = 5;
@@ -41,7 +41,7 @@ class CalculatorTest {
     }
 
          @Test
-         void shouldDivisionWork() {
+         void should50DividedBy5Be10() {
 
              double value1 = 50;
              double value2 = 5;
@@ -54,7 +54,7 @@ class CalculatorTest {
          }
 
              @Test
-             void shouldSummationWork2() {
+             void shouldMinIntegerPlus10BeNegative2147483638() {
 
                  int value1 = Integer.MIN_VALUE;
                  int value2 = 10;
@@ -65,7 +65,7 @@ class CalculatorTest {
              }
 
              @Test
-             void shouldSubstractionWork2() {
+             void shouldSMaxIntegerMinus5Be2147483642() {
 
                  int value1 = Integer.MAX_VALUE;
                  int value2 = 5;
@@ -76,7 +76,7 @@ class CalculatorTest {
              }
 
              @Test
-             void shouldMultiplicationWork2() {
+             void shouldMaxIntegerTimes1Be2147483647() {
 
                  int value1 = Integer.MAX_VALUE;
                  int value2 = 1;
@@ -88,7 +88,7 @@ class CalculatorTest {
              }
 
              @Test
-             void shouldDivisionWork2() {
+             void shouldMaxIntegerDiviedBy1Be2147483647() {
 
                  double value1 = Integer.MAX_VALUE;
                  double value2 = 1;
@@ -100,7 +100,7 @@ class CalculatorTest {
              }
 
     @Test
-    void shouldSummationWork3() {
+    void shouldMaxIntegerPlusNegative100Be2147483547() {
 
         int value1 = Integer.MAX_VALUE;
         int value2 = -100;
@@ -111,7 +111,7 @@ class CalculatorTest {
     }
 
     @Test
-    void shouldSubstractionWork3() {
+    void shouldMinIntegerMinusNegative500BeNegative2147483148() {
 
         int value1 = Integer.MIN_VALUE;
         int value2 = -500;
@@ -122,7 +122,7 @@ class CalculatorTest {
     }
 
     @Test
-    void shouldMultiplicationWork3() {
+    void shouldMinIntegerTimesNegative1BeNegative2147483648() {
 
         int value1 = Integer.MIN_VALUE;
         int value2 = -1;
@@ -134,7 +134,7 @@ class CalculatorTest {
     }
 
     @Test
-    void shouldDivisionWork3() {
+    void should11DividedBy3Be3Point6666666666666665() {
 
         double value1 = 11;
         double value2 = 3;
