@@ -8,24 +8,24 @@ import static org.junit.jupiter.api.Assertions.*;
 class AgeTest {
 
     @Test
-    void shouldReturnBelow18WhenAgeIs17() {
+    void shouldReturnFalseWhenAgeIs17() {
 
-        String result = Age.ageVerification(17);
-        Assertions.assertEquals("You are below 18", result);
+        Boolean result = Age.ageVerification(17);
+        Assertions.assertEquals(false, result);
     }
 
     @Test
-    void shouldReturnOver18WhenAgeIs99() {
+    void shouldReturnTrueWhenAgeIs99() {
 
-        String result = Age.ageVerification(99);
-        Assertions.assertEquals("You are over 18", result);
+        Boolean result = Age.ageVerification(99);
+        Assertions.assertEquals(true, result);
     }
 
     @Test
-    void shouldReturnBelow18WhenAgeIs2() {
+    void shouldReturnFalseWhenAgeIs2() {
 
-        String result = Age.ageVerification(2);
-        Assertions.assertEquals("You are below 18", result);
+        Boolean result = Age.ageVerification(2);
+        Assertions.assertEquals(false, result);
 
     }
 }

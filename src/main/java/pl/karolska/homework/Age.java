@@ -2,19 +2,19 @@ package pl.karolska.homework;
 
 public class Age {
 
-    public static String ageVerification(int age1) {
+    public static boolean ageVerification(int age1) {
         if (age1 >= 18) {
-            return "You are over 18";
+            return true;
 
         } else {
 
-            return "You are below 18";
+            return false;
         }
 
     }
     public static void main (String[]args){
 
-        System.out.println(ageVerification(12));
+        System.out.println("Are you over 18 years old? " + ageVerification(17));
 
     }
 
