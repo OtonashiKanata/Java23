@@ -1,9 +1,9 @@
 package pl.karolska.homework;
 
 public class Triangle extends Shape{
-    private final double sideA;
-    private final double sideB;
-    private final double sideC;
+    private double sideA;
+    private double sideB;
+    private double sideC;
 
     public Triangle(double sideA, double sideB, double sideC) {
         this.sideA = sideA;
