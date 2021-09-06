@@ -1,7 +1,5 @@
 package pl.karolska.homework;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class MainMovie {
 
     public static void main(String[] args) {
