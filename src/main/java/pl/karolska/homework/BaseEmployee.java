@@ -26,23 +26,15 @@ public abstract class BaseEmployee {
 
     public int getEmploymentTime() {
         return Calendar.getInstance().get(Calendar.YEAR) - employmentTime;
-    }
-
-    public abstract double calculateMonthlySalary();
-
-    @Override
-    public String toString() {
-        return "BaseEmployee{" +
-                "name='" + nameAndSurname + '\'' +
-                ", salary=" + salary +
-                ", yearOfEmployment=" + employmentTime +
-                '}';
 
 
     }
 
 
 }
+
+
+
 
 
 
