@@ -4,18 +4,20 @@ import java.util.Calendar;
 
 public abstract class BaseEmployee {
 
-    private String nameAndSurname;
+    private String name;
+    private String surname;
     private final int employmentTime;
     private final double salary;
-    protected final static double defaultSalary = 3000.0;
+    protected final static double DEFAULT_SALARY = 3000.0;
 
-    public BaseEmployee(String nameAndSurname, int employmentTime) {
-        this(nameAndSurname, employmentTime, defaultSalary);
+    public BaseEmployee(String name, String surname, int employmentTime) {
+        this(name, surname, employmentTime, DEFAULT_SALARY);
     }
 
 
-    public BaseEmployee(String nameAndSurname, int employmentTime, double salary) {
-        this.nameAndSurname = nameAndSurname;
+    public BaseEmployee(String name, String surname, int employmentTime, double salary) {
+        this.name = name;
+        this.surname = surname;
         this.employmentTime = employmentTime;
         this.salary = salary;
     }

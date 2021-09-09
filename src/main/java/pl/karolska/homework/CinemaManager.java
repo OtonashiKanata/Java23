@@ -3,23 +3,23 @@ package pl.karolska.homework;
 public class CinemaManager extends BaseEmployee {
 
     private double bonus;
-    private final static double defaultSalary = 5000.0;
-    private final static double defaultBonus = 500.0;
+    private final static double DEFAULT_SALARY = 5000.0;
+    private final static double DEFAULT_BONUS = 500.0;
 
-    public CinemaManager(String nameAndSurname, int employmentTime) {
-        this(nameAndSurname, employmentTime, defaultSalary, defaultBonus);
+    public CinemaManager(String name, String surname, int employmentTime) {
+        this(name, surname, employmentTime, DEFAULT_SALARY, DEFAULT_BONUS);
     }
 
-    public CinemaManager (String nameAndSurname, int employmentTime, double salary) {
-        this(nameAndSurname, employmentTime, salary, defaultBonus);
+    public CinemaManager (String name, String surname, int employmentTime, double salary) {
+        this(name, surname, employmentTime, salary, DEFAULT_BONUS);
     }
 
-    public CinemaManager (String nameAndSurname, double bonus, int employmentTime) {
-        this(nameAndSurname, employmentTime, defaultSalary, bonus);
+    public CinemaManager (String name, String surname, double bonus, int employmentTime) {
+        this(name, surname, employmentTime, DEFAULT_SALARY, bonus);
     }
 
-    public CinemaManager(String nameAndSurname, int employmentTime, double salary, double bonus) {
-        super(nameAndSurname, employmentTime, salary);
+    public CinemaManager(String name, String surname, int employmentTime, double salary, double bonus) {
+        super(name, surname, employmentTime, salary);
         this.bonus = bonus;
     }
 
