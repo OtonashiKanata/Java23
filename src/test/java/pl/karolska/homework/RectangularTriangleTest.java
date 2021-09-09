@@ -35,5 +35,6 @@ class TriangleTest {
         Assertions.assertFalse(isItRectangular);
 
 
+
     }
 }
