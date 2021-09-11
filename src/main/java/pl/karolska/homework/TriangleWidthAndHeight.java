@@ -12,9 +12,10 @@ public class TriangleWidthAndHeight {
 
     @Override
     public String toString() {
-        return "Triangle with the " +
-                "width of " + width +
-                " and height of " + height;
+        return "Triangle (" +
+                "width = " + width +
+                ", height = " + height +
+                ")";
     }
 
 }
