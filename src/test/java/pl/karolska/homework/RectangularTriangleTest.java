@@ -3,7 +3,7 @@ package pl.karolska.homework;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class TriangleTest {
+class RectangularTriangleTest {
 
     @Test
     void shouldBeNotRectangular() {
