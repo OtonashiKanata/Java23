@@ -15,5 +15,4 @@ public class Subtract implements UpdatedCalculator {
         }
         return 0;
     }
-
 }

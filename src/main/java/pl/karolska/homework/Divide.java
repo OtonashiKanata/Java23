@@ -13,5 +13,4 @@ public class Divide implements UpdatedCalculator {
         }
         return 0;
     }
-
 }

@@ -11,5 +11,4 @@ public class Multiply implements UpdatedCalculator{
 
         return multiplication;
     }
-
 }

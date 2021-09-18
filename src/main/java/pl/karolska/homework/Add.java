@@ -12,5 +12,4 @@ public class Add implements UpdatedCalculator {
         return summation;
 
     }
-
 }
