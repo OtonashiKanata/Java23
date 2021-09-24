@@ -2,7 +2,7 @@ package pl.karolska.homework;
 
 public class DivisionBy3 {
 
-    public static void Validate(int[] values) {
+    public static void validate(int[] values) {
 
         for (int value : values) {
             try {
