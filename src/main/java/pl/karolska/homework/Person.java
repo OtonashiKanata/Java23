@@ -1,19 +1,18 @@
 package pl.karolska.homework;
 
-import java.util.Objects;
-
-public class Person {
+public class Person implements Comparable<Person>{
     private final String name;
     private final String surname;
-    private final int birthDate;
+    private final int birthdate;
+    private final int height;
+    private final double weight;
 
-
-    public Person(String name, String surname, int birthDate) {
+    public Person(String name, String surname, int yearOfBirth, int height, double weight) {
         this.name = name;
         this.surname = surname;
-        this.birthDate = birthDate;
-
-
+        this.birthdate = yearOfBirth;
+        this.height = height;
+        this.weight = weight;
     }
 
     public String getName() {
@@ -24,31 +23,26 @@ public class Person {
         return surname;
     }
 
-    public int getBirthDate() {
-        return birthDate;
+    public int getBirthdate() {
+        return birthdate;
     }
 
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return birthDate == person.birthDate;
-
+    public int getHeight() {
+        return height;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(birthDate);
-
-
+    public double getWeight() {
+        return weight;
     }
 
     @Override
     public String toString() {
-        return name + "/" + surname + "/" + birthDate;
+        return "Person name: " + name + ",\t surname: " + surname + ",\t yearOfBirth: " + birthdate +
+                ",\t height: " + height + ",\t weight: " + weight;
+    }
 
+    @Override
+    public int compareTo(Person o) {
+        return Integer.compare(o.getBirthdate(), this.birthdate);
     }
 }
