@@ -30,6 +30,7 @@ public class MainPersonClass {
         for (Person person : persons3)
 
         {
+
             System.out.println(person.toString());
 
         }
